@@ -13,6 +13,8 @@
     <h1>Test</h1>
     <p>hello World!</p>
     <p id="modified"></p>
-    <script src="js/index.js"></script>
+    <script>let currentdate = document.lastModified;
+        document.getElementById("modified").textContent =
+          "Last Updated: " + currentdate;</script>
   </body>
 </html>
