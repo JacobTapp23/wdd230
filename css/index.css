@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&family=Press+Start+2P&display=swap');
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Press Start 2P',  'Neuton';
+padding: 1em;
+line-height: 1em;
+}
+p{
+font-family: 'Neuton', 'Press Start 2P';
+padding: 0.5em;
+text-align: center;
+font-size: 16pt;
+}
+p.modified{
+color: brown;
+}
+header {
+  border-radius: 25px;
+background-color:#91ADC2;
+padding: 20px;
+height: 175px;
+display: grid;
+grid-template-columns: 110px auto; 
+align-items: center;
+text-align: center;
+box-shadow: 5px 10px 8px 10px #888888;
+}
+div.content {
+max-width: 800px;
+margin: 0 auto;
+padding: 1em;
+
+}
+div.lessonlist{
+border-style: solid hidden solid hidden;
+border-width: 1px;
+}
+img {
+max-width:100%;
+height:auto;
+box-shadow: 2px 5px 4px 5px gray;
+}
+footer{
+background-color:#91ADC2;
+border-radius: 25px;
+}
+span{
+font-family: 'Neuton', 'Press Start 2P';
+}
+ul{
+font-size: 16pt;
+}
+footer{
+    box-shadow: 5px 10px 8px 10px #888888;
+}
