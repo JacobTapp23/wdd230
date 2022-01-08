@@ -11,7 +11,7 @@ text-align: center;
 font-size: 16pt;
 }
 p.modified{
-color: brown;
+color: rgb(251, 255, 0);
 }
 header {
   border-radius: 25px;
