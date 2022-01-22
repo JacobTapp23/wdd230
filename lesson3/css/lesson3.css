@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    }
+p {
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+header {
+    background-color: #83C5BE;
+    margin: auto;
+    vertical-align: middle;
+    min-height: 80px;
+}
+nav{
+    vertical-align: middle;
+}
+
+nav ul{
+    justify-content: space-around;
+    display: flex;
+    list-style: none;
+    font-size: 16pt;
+    vertical-align: middle;
+}
+main {
+    display:grid;
+    align-items: center;
+    text-align: center;
+    background-color: #EDF6F9;
+}
+div.content {
+    padding: 1em;
+  }
+body {
+    background-color: #006D77;
+  }
+div.gridforpics{
+    display:grid;
+}
+div.persona1{
+    grid-column: 1;
+}
+div.persona2{
+    grid-column: 2;
+}
+footer{
+    background-color:#83C5BE;
+    text-align: center;
+    }
+    .colors {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+      }
+      .colors th {
+        background-color: #999;
+        height: 2em;
+      }
+      .colors td{
+        width: 20%;
+        height: 6em;
+      }
+      
+      .primary {
+        background-color:#83C5BE;
+      }
+      .secondary {
+        background-color:#006D77;
+      }
+      .accent1 {
+        background-color:#E29578;
+      }
+      .accent2{
+        background-color:#EDF6F9;
+      }
+      .accent3{
+        background-color: #FFDDD2;
+      }
+      
+@media screen and (max-width:800px) {
+nav ul {
+    display:block;
+    text-align:center;
+}
+div.persona2{
+    grid-column: 1;
+}
+}
+
+
