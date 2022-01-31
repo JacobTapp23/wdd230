@@ -48,7 +48,7 @@ h2 {
     grid-column: 2;
     grid-row:2;
 }
-nav ul{
+ul{
     justify-content: space-around;
     display: flex;
     flex-direction: column;
@@ -92,11 +92,16 @@ body {
     background-color: #006D77;
   }
   footer{
+
     background-color:#83C5BE;
   }
  div.footer-date{
     text-align: center;
     }
+div.footer-main{
+    display:block;
+    align-items: center;
+}
 div.footer-box {
     margin-top: 20px;
     padding: 0.5em;
@@ -130,6 +135,9 @@ div.footer-box {
     div.event {
         grid-column: 1/ span 2;
         grid-row: 5;
+    }
+    div.footer-main{
+        display:flex;
     }
 }
 @media screen and (min-width:1180px){
