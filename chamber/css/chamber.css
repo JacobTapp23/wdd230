@@ -13,14 +13,18 @@ header {
     margin: auto;
     min-height: 80px;
 }
-div.header-grid {
-    display: grid; 
-  align-items: center;
+div.header-grid{
+    display:block;
+    align-items: center;
 }
 nav{
     display:block;
-    grid-column: 2;
     padding: 0.5em;
+    align-items: left;
+    
+}
+nav ul{
+    padding:0;
 }
 .navigation li:first-child{
     display: block;
@@ -54,6 +58,7 @@ ul{
     flex-direction: column;
     list-style: none;
     font-size: 16pt;
+    margin-left: 0;
 }
 div.logo-box {
     border-radius: 0 0 0 0; 
@@ -144,7 +149,7 @@ div.footer-box {
 @media screen and (min-width:1180px){
     div.header-grid {
           display: grid;
-          grid-template-columns: 110px auto; 
+          grid-template-columns: 220px auto; 
         align-items: center;
       }
 
