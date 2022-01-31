@@ -194,4 +194,7 @@ div.footer-box {
         grid-column: 4;
         grid-row: 1/ span 3;
     }
+    .navigation a {
+        background-color: #83C5BE;
+    }
 }
