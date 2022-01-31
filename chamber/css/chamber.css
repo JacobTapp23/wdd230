@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    }
+p {
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+header {
+    background-color: #83C5BE;
+    margin: auto;
+    min-height: 80px;
+}
+div.header-grid {
+    display: grid; 
+  align-items: center;
+}
+nav{
+    display:block;
+    grid-column: 2;
+    padding: 0.5em;
+}
+.navigation li:first-child{
+    display: block;
+}
+.navigation li{
+    display:none;
+}
+.navigation a{
+    display:block;
+    padding: 0.75rem;
+    text-align: center;
+    color:#EDF6F9;
+    text-decoration: none;
+    background-color: #006D77;
+}
+.navigation a:hover{
+    background-color: #E29578;
+    color: #006D77;
+}
+h2 {
+    text-align: center;
+}
+.shown li{
+    display: block;
+    grid-column: 2;
+    grid-row:2;
+}
+nav ul{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 16pt;
+}
+div.logo-box {
+    border-radius: 0 0 0 0; 
+  padding: 0.5em;
+  grid-column: 1;
+  grid-row:1;
+}
+div.date-box{
+    border-style: solid;
+    margin-bottom: 0.5em;
+}
+img.logo {
+    height: auto;
+    max-width: 25%;
+}
+main {
+    display:grid;
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px 20px;
+    background-color: #EDF6F9;
+    padding: 20px;
+}
+div.hero, div.event, div.weather, div.news, div.spotlights, div.join{
+    background-color: #FFDDD2;
+    border-style: solid;
+    border-width: 1px;
+    height:23vw;
+}
+div.join {
+    display:none;
+}
+div.content {
+    padding: 1em;
+  }
+body {
+    background-color: #006D77;
+  }
+  footer{
+    background-color:#83C5BE;
+  }
+ div.footer-date{
+    text-align: center;
+    }
+div.footer-box {
+    margin-top: 20px;
+    padding: 0.5em;
+}
+@media screen and (min-width:800px) {
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+    div.hero, div.event, div.weather, div.news, div.spotlights, div.join {
+        height:23vw;
+   }
+    div.hero{
+        grid-column: 1/ span 3;
+        grid-row: 1;
+    }
+    div.news {
+        grid-column: 1/ span 3;
+        grid-row: 2;
+    }
+    div.spotlights {
+        grid-column: 1/ span 3;
+        grid-row: 3;
+    }
+    div.join {
+        display: block;
+        grid-column: 1/ span 3;
+        grid-row: 4;
+    }
+    div.event {
+        grid-column: 1/ span 2;
+        grid-row: 5;
+    }
+}
+@media screen and (min-width:1180px){
+    div.header-grid {
+          display: grid;
+          grid-template-columns: 110px auto; 
+        align-items: center;
+      }
+
+      nav{
+          display:block;
+          grid-column: 2;
+    }
+    .navigation li:first-child{
+        display:none;
+    }
+    .navigation li{
+        display:block;
+    }
+    
+    nav ul{
+        justify-content: space-around;
+        display: flex;
+        list-style: none;
+        font-size: 16pt;
+        vertical-align: middle;
+        flex-direction: row;
+    }
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    div.hero, div.event, div.weather, div.news, div.spotlights, div.join {
+         height:23vw;
+    }
+    div.event{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    div.weather{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    div.join{
+        display:block;
+        grid-column: 1;
+        grid-row: 3;
+
+    }
+    div.hero {
+        height: 100%;
+        grid-column: 2/ span 2;
+        grid-row: 1/ span 2;
+    }
+    div.news {
+        grid-column: 2/ span 2;
+        grid-row: 3;
+    }
+    div.spotlights {
+        height: 100%;
+        grid-column: 4;
+        grid-row: 1/ span 3;
+    }
+}
