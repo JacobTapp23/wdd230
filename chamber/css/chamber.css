@@ -66,8 +66,7 @@ div.date-box{
     margin-bottom: 0.5em;
 }
 img.logo {
-    height: auto;
-    max-width: 25%;
+    height: 100%;
 }
 main {
     display:grid;
