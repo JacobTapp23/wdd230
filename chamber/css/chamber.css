@@ -99,6 +99,7 @@ body {
     text-align: center;
     }
 div.footer-main{
+    margin-top:20px;
     display:block;
     align-items: center;
 }
