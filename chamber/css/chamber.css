@@ -21,7 +21,6 @@ div.header-grid{
 nav{
     display:block;
     padding: 0.5em;
-    align-items: left;
     
 }
 nav ul{
@@ -115,7 +114,6 @@ div.spotlights{
     font-size:12pt;
 }
 div.weather-box{
-    size: 100%;
     display:flex;
     justify-content: space-around;
     border-style: solid;
