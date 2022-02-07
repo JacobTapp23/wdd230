@@ -18,3 +18,7 @@ let currentdate = document.lastModified;
       document.querySelector(".modified").textContent =
         "Last Updated: " + currentdate;
 document.querySelector(".year").innerHTML = new Date().getFullYear();
+
+if (d.getDay() == 1 || d.getDate() == 2) {
+  document.querySelector(".meeting").style.display = "block";
+}
