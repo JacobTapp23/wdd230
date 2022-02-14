@@ -14,7 +14,7 @@
         <div class="header-grid">
         <div class="logo-box">
             <img class="logo"
-              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.png"
+              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.webp"
               alt="Logo image"
             />
           </div>
@@ -34,15 +34,23 @@
     <main>
         <div class="hero"><h1 id="hero">Welcome to Saupark</h1>
           <button id="bhero" type="button">Join the Chamber</button>
+        <div id="hero-box">
+          <picture>
+            <source srcset="images/large.jpg" media="min-width: 1180px">
+            <source srcset="images/medium.jpg" media="(min-width: 800px) and (max-width: 1179px)">
+            <source srcset="images/small.jpg" media="(min-width: 1px) and (max-width: 799px)">
+            <img src="images/large.jpg" alt="large-hero"/>
+          </picture>
+        </div>
         </div>
         <div class="event"><h2>Ribbon Cutting</h2>
           <h3>The Diamond Shack</h3>
           <p>Join us for the grand opening of The Diamond Shack, Thursday at 1pm</p>
         </div>
         <div class="weather"><h2>Weather</h2>
-          <div class="weather-box"><img id="weather" src="images/weather.png" alt="weather icon"/> <h1>33&#176;C</h1></div>
-          <p>Wind Speed: 2.5 km/h</p>
-          <p>Wind Chill: N/A</p>
+          <div class="weather-box"><img id="weather" src="images/weather.png" alt="weather icon"/> <h1><span id="temp">-30</span>&#176;F</h1></div>
+          <p>Wind Speed: <span id="speed">50</span> mph</p>
+          <p>Wind Chill:<span id="chill"></span></p>
         </div>
         <div class="news">
           <h2>News Release</h2>
@@ -80,7 +88,7 @@
       <div class="footer-main">
         <div class="footer-box">
             <img class="logo"
-              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.png"
+              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.webp"
               alt="Logo image"
             />
             </div>

@@ -1,14 +1,12 @@
-//const button = document.querySelector('.btn');
-const buttons = document.getElementsByClassName('btn');
-console.log(buttons);
+const click = document.querySelector('.click');
+const hover = document.querySelector('.hover');
+const out = document.querySelector('.out');
+const up = document.querySelector('.up');
+const down = document.querySelector('.down');
 
-function show() {
-    // button.classList.add('newstyle');
-    //buttons.classList.toggle('newstyle');
-};
+click.addEventListener('click' , ()=> {click.classList.toggle('clickstyle')});
+hover.addEventListener('mouseover' , ()=> {hover.classList.toggle('hoverstyle')});
+out.addEventListener('mouseout' , ()=> {out.classList.toggle('outstyle')});
+up.addEventListener('mouseup' , ()=> {up.classList.toggle('upstyle')});
+down.addEventListener('mousedown' , ()=> {down.classList.toggle('downstyle')});
 
-
-//buttons.addEventListener('click', show);
-
-// button.addEventListener('click', ()=>
-// {button.classList.add('newstyle')});

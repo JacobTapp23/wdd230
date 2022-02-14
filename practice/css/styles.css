@@ -2,7 +2,23 @@ body {
     background-color: beige;
 }
 
-.newstyle {
+.clickstyle {
     background-color: red;
+    /* display:none; */
+}
+.hoverstyle {
+    background-color: blue;
+    /* display:none; */
+}
+.outstyle {
+    background-color: green;
+    /* display:none; */
+}
+.upstyle {
+    background-color: yellow;
+    /* display:none; */
+}
+.downstyle {
+    background-color: purple;
     /* display:none; */
 }

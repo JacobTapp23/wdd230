@@ -132,8 +132,15 @@ div.weather-box{
 }
 div.hero{
     position: relative;
-    background-size: cover;
-    background-image: URL("../images/hero-background-min.jpg");
+    /* background-size: cover; */
+    /* background-image: URL("../images/hero-background-min.jpg"); */
+}
+#hero-box {
+    overflow:hidden;
+}
+div.wind-chill{
+    display: flex;
+    justify-content: center;
 }
 #hero{
     position:absolute;
@@ -146,6 +153,7 @@ div.hero{
 
 }
 #bhero {
+    display:none;
     position:absolute;
     bottom:20px;
     right:20px;
