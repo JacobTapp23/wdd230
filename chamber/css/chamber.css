@@ -110,7 +110,7 @@ div.spotlights{
     border-width: 1px;
     margin: 10px;
 }
-#spotlight {
+.spotlight {
     font-size:12pt;
 }
 div.weather-box{
