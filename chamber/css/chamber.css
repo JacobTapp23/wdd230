@@ -153,7 +153,7 @@ div.wind-chill{
 
 }
 #bhero {
-    display:none;
+    display: none;
     position:absolute;
     bottom:20px;
     right:20px;
@@ -228,6 +228,12 @@ div.footer-box {
     div.footer-main{
         display:flex;
     }
+    #bhero {
+        display: block;
+        position:absolute;
+        bottom:20px;
+        right:20px;
+    }
 }
 @media screen and (min-width:1180px){
     div.header-grid {
@@ -299,5 +305,11 @@ div.footer-box {
     }
     .navigation a {
         background-color: #83C5BE;
+    }
+    #bhero {
+        display: block;
+        position:absolute;
+        bottom:20px;
+        right:20px;
     }
 }
