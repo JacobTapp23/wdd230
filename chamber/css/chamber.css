@@ -228,12 +228,6 @@ div.footer-box {
     div.footer-main{
         display:flex;
     }
-    #bhero {
-        display: block;
-        position:absolute;
-        bottom:20px;
-        right:20px;
-    }
 }
 @media screen and (min-width:1180px){
     div.header-grid {
