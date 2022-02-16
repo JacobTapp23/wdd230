@@ -6,7 +6,7 @@ let body = document.querySelector('body');
 // Second:
 
 var bgcolorForm = document.getElementById('bgcolor');
-
+bgcolorForm.addEventListener('change', populateStorage);
 
 if(!localStorage.getItem('bgcolor')) {
     populateStorage();
@@ -28,5 +28,4 @@ function setStyles() {
     body.style.backgroundColor = '#' + currentColor;
 
 }
-
-bgcolorForm.addEventListener = ('change', populateStorage);
+;
