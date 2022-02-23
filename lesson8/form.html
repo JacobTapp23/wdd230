@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Practice</title>
+</head>
+<body>
+    <form method="get" action="thankyou.html">
+        <label for="fname">First Name *:</label>
+        <input id="fname" name="firstName" required>
+        <label for="phone">Phone Number:</label>
+        <input id="phone" type="tel" name="phone">
+        <label for="pw">Password (Only letters must be 7 characters long) *: </label>
+        <input id="pw" name="pw" minlength="7" pattern="[ -A-Za-z]+" required>
+        <input type="hidden" name="todaydate" value="CurrentDate">
+        <label for="level">Enter your Level of Membership</label>
+        <input list="level" name="memlevel">
+        <input type="submit" value="submit">
+        <datalist id="level">
+            <option value="level 1"></option>
+            <option value="level 2"></option>
+            <option value="level 3"></option>
+        </datalist>
+
+    </form>
+</body>
+</html>
