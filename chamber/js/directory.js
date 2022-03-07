@@ -1,6 +1,6 @@
 
 
-fetch("./data.json")
+fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
   .then(function (response) {
     return response.json();
   })
