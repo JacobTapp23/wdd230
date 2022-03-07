@@ -11,6 +11,10 @@ p {
 body{
     text-align: center;
 }
+main{
+    background-color: #EDF6F9;
+    margin:20px;
+}
 main.form{
     display:grid;
     background-color: #EDF6F9;
@@ -230,6 +234,32 @@ div.footer-box {
     margin-top: 20px;
     padding: 0.5em;
 }
+#content {
+    width: 100%;
+    margin: 0 auto;
+    }
+    .cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin:10px;
+    }
+    .cards section {
+    border: 1px solid black;
+    background-color: #FFDDD2;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+    }
+    h2.directory {
+    text-align: center;
+    }
+    img.directory {
+    width: 90%;
+    box-shadow: 5px 10px 8px 5px #888888;
+    }
 
 @media screen and (min-width:800px) {
     main.index{
@@ -371,31 +401,4 @@ div.footer-box {
         bottom:20px;
         right:20px;
     }
-    #content {
-        width: 100%;
-        margin: 0 auto;
-        }
-        .cards {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        background-color: #EDF6F9;
-        margin:10px;
-        }
-        .cards section {
-        border: 1px solid black;
-        background-color: #FFDDD2;
-        padding: 30px;
-        text-align: center;
-        width: 300px;
-        margin: 20px;
-        }
-        h2.directory {
-        text-align: center;
-        }
-        img.directory {
-        width: 90%;
-        box-shadow: 5px 10px 8px 5px #888888;
-        }
 }
