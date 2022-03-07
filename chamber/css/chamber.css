@@ -14,6 +14,7 @@ body{
 main{
     background-color: #EDF6F9;
     margin:20px;
+    padding:20px;
 }
 main.form{
     display:grid;

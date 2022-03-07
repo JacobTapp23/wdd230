@@ -8,6 +8,7 @@ fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const directory = jsonObject['directory'];
     directory.forEach(displayProphets);
+    
  });
 
   function displayProphets(directory) {  // Create elements to add to the document
@@ -35,11 +36,38 @@ fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
     document.querySelector('div.cards').appendChild(card);
   }
 
-  //to clear out cards
-//   let cards = document.querySelectorAll('.cards');
-//   cards.forEach((item)=>{
-//       item.remove();
-//   });
+  const listView = document.querySelector('#listview');
+  listView.addEventListener('click', clearCards);
+//   to add list
+function clearCards() {
+  let cards = document.querySelectorAll('.cards');
+  cards.forEach((item)=>{
+      item.remove();
+  });
+  fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  // temporary checking for valid response and data parsing
+    const directory = jsonObject['directory'];
+    directory.forEach(populateTable);
+    
+ });
+};
+function populateTable(directory) {
+        let myTableDiv = document.getElementById("myDynamicTable");
+        let table = document.createElement('table');
+        let tr = document.createElement('tr');
+        tr.innerHTML = '<td>' + directory.name + '</td>' +
+        '<td>' + directory.address + '</td>' +
+        '<td>' + directory.phone + '</td>' +
+        '<td>' + directory.website + '</td>';
+        table.appendChild(tr);
+        myTableDiv.appendChild(table);
+
+};
+
 // function changeStyles() {
 // //changing styles in js
 // if(window.innerWidth > 800 && window.innerWidth < 1000){
