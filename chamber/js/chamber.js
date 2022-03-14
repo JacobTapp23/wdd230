@@ -23,7 +23,7 @@ if (d.getDay() == 1 || d.getDate() == 2) {
   document.querySelector(".meeting").style.display = "block";
 };
 
-const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=4dca22dd938418525bfde3d55fe13bc7";
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=4dca22dd938418525bfde3d55fe13bc7";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
