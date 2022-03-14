@@ -40,7 +40,7 @@ let temp = parseFloat(document.getElementById('temp').textContent);
 let windspeed = parseFloat(document.getElementById('speed').textContent);
 let windchill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
 
-if (Math.round(temp) <= 50.00 && Math.round(windspeed) >= 3.00) {
+if (temp <= 50.00 && windspeed >= 3.00) {
   document.getElementById('chill').innerHTML = " " + windchill + "&#176;F";
 }
 else{
