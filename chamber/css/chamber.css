@@ -177,8 +177,8 @@ div.weather-box{
 }
 div.hero{
     position: relative;
-    /* background-size: cover; */
-    /* background-image: URL("../images/hero-background-min.jpg"); */
+    background-size: cover;
+    background-image: URL("../images/hero-background-min.jpg");
 }
 #hero-box {
     overflow:hidden;
