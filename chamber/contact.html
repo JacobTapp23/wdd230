@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/chamber.css">
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+        <div class="logo-box">
+          <a href="index.html">
+            <img class="logo"
+              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.webp"
+              alt="Logo image"
+            />
+          </a>
+          </div>
+        <nav>
+            <ul class="navigation">
+            <li><a href="#">&#9776; menu</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        <div class="date box"><h2 id="day"></h2></div>
+    </header>
+    <main class="contact">
+        <div id="contactbox">
+            <h3>Contact Us!</h3>
+            <form method="get" action="thankyou.html">
+                <label for="fname">First Name: *</label>
+                <input id="fname" type="text" name="firstName" required>
+                <label for="lname">Last Name: *</label>
+                <input id="lname" type="text" name="lastName" required>
+                <label for="email">Email: *</label>
+                <input id="email" type="email" name="email" placeholder="name@example.com" required>
+                <label for="phone">Phone Number *</label>
+                <input id="phone" type="tel" name="phone" required>
+                <label for="description">Comment </label>
+                <textarea id="description"></textarea>
+                <input type="hidden" name="todaydate" value="CurrentDate">
+                <input type="submit" value="submit">
+            </form>
+            <p>* indicates a required field</p>
+        </div>
+        <section id="column1">
+            <h2>Board Chair</h2>
+            <p>Chris Hemsworth</p>
+            <img class="chairimage" src="images/chrish.jpg" alt="Chris_hemsworth"/>
+        </section>
+        <section id="column2">
+            <h2>Vice Chair</h2>
+            <p>Chris Pratt</p>
+            <img class="chairimage" src="images/chrisp.jpg" alt="Chris_pratt"/>
+        </section>
+        <section id="column3">
+            <h2>Secratary</h2>
+            <p>Chris Evans</p>
+            <img class="chairimage" src="images/chrise.jpg" alt="Chris_evans"/>
+        </section>
+        <section id="column4">
+            <h2>Treasurer</h2>
+            <p>Chris Columbus</p>
+            <img class="chairimage" src="images/chrisc.jpg" alt="Chris_columbus"/>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-main">
+          <div class="footer-box">
+              <img class="logo"
+                src="images/fe0d371f3d024970b95c20c3b220f2dc-min.webp"
+                alt="Logo image"
+              />
+              </div>
+      
+            <h2>Saupark Chamber of Commerce</h2>
+            <p>31 Laney Lane Saupark, ID 83408 | (208)-555-3553</p>
+            <ul>
+              <li><a href="#">Location Map</a></li>
+            </ul>
+  </div>
+          <div class="footer-date"><p>&copy; <span class="year"></span> Saupark Chamber | Jacob Tapp | WDD 230 Project | <span class="modified"></span> </p>
+          </div>
+        </footer>  
+</body>
+</html>
