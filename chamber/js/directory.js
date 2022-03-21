@@ -43,8 +43,11 @@ fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
 //   to add list
 function clearCards() {
   let div = document.createElement('div');
-  div.setAttribute('id','myDynamicTable');
+  div.classList.add('myDynamicTable');
  document.querySelector('main').appendChild(div);
+ let table = document.createElement('table');
+  div.appendChild(table);
+  table.classList.add('tableDirectory');
   let cards = document.querySelectorAll('.cards');
   cards.forEach((item)=>{
       item.remove();
@@ -61,22 +64,19 @@ function clearCards() {
  });
 };
 function populateTable(directory) {
-        let myTableDiv = document.getElementById('myDynamicTable');
-        let table = document.createElement('table');
         let tr = document.createElement('tr');
         tr.innerHTML = '<td>' + directory.name + '</td>' +
         '<td>' + directory.address + '</td>' +
         '<td>' + directory.phone + '</td>' +
         '<td>' + directory.website + '</td>';
-        table.appendChild(tr);
-        myTableDiv.appendChild(table);
+        document.querySelector('.tableDirectory').appendChild(tr);
 
 };
 function clearList() {
   let cards = document.createElement('div');
   cards.classList.add('cards');
   document.querySelector('main').appendChild(cards);
-  tableIdToRemove = document.getElementById("myDynamicTable");
+  tableIdToRemove = document.querySelector(".myDynamicTable");
   tableIdToRemove.parentNode.removeChild(tableIdToRemove);
   
   
@@ -122,7 +122,7 @@ function changeStyles() {
 //changing styles in js
 if((window.innerWidth > 798 && window.innerWidth < 802) || (window.innerWidth > 1178 && window.innerWidth < 1182)){
   let div = document.createElement('div');
-  div.setAttribute('id','myDynamicTable');
+  div.classList.add('.myDynamicTable');
  document.querySelector('main').appendChild(div);
   let cards = document.querySelectorAll('.cards');
   cards.forEach((item)=>{

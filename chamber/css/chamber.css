@@ -18,6 +18,8 @@ main{
 }
 main.form{
     display:grid;
+    grid-auto-columns: 1fr;
+   grid-auto-flow: column;
     background-color: #EDF6F9;
     margin: 20px;
     padding: 20px;
@@ -145,7 +147,14 @@ div.hero, div.event, div.weather, div.news, div.spotlights, div.join{
     min-height: 200px;
 
 }
-
+div.joinpage {
+    background-color: #FFDDD2;
+    border-style: solid;
+    border-width: 1px;
+    margin: 10px;
+    padding: 10px;
+    min-height:200px;
+}
 div.spotlights{
     display:grid;
 
@@ -260,6 +269,22 @@ div.footer-box {
     img.directory {
     width: 90%;
     box-shadow: 5px 10px 8px 5px #888888;
+    }
+    table {
+        width: 100%;
+        margin: 10px auto;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 7px 15px;
+
+    }
+    td {
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+    }
+    table tr:nth-child(even) {
+        background-color: #FFDDD2;
     }
 
 @media screen and (min-width:800px) {
