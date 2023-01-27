@@ -183,9 +183,12 @@ div.spotlights{
     border-style: solid;
     border-width: 1px;
     margin: 10px;
+    padding: 1fr;
 }
-.spotlight {
-    font-size:12pt;
+.spotlight{
+    font-size: 12pt;
+    margin:0;
+
 }
 div.weather-box{
     display:flex;
@@ -307,7 +310,7 @@ div.footer-box {
         background-color: #FFDDD2;
     }
 
-@media screen and (min-width:800px) {
+@media screen and (min-width:650px) {
     main.index{
         display:grid;
         grid-template-columns: 1fr 1fr 1fr;
