@@ -1,7 +1,8 @@
+// Responsive Hamburger Menu
 const nav = document.querySelector('.navigation');
 nav.addEventListener('click', ()=>
 {nav.classList.toggle('shown')});
-
+// Dynamic Date Banner
 const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
@@ -13,7 +14,7 @@ let year =d.getFullYear();
 document.getElementById("day").innerHTML = "Saupark Chamber of Commerce | " + weekday + ", " + day + " " + month + " " + year;
 
 
-
+// Dynamic Last Updated Footer
 let currentdate = document.lastModified;
       document.querySelector(".modified").textContent =
         "Last Updated: " + currentdate;
@@ -22,7 +23,7 @@ document.querySelector(".year").innerHTML = new Date().getFullYear();
 if (d.getDay() == 1 || d.getDate() == 2) {
   document.querySelector(".meeting").style.display = "block";
 };
-
+// weather API call
 const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5605242&appid=4dca22dd938418525bfde3d55fe13bc7";
 fetch(apiURL)
   .then((response) => response.json())
@@ -35,6 +36,7 @@ fetch(apiURL)
     const iconsrc = `https://openweathermap.org/img/w/${jsObject.list[0].weather[0].icon}.png`;
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#condition').textContent = jsObject.list[0].weather[0].description;
+// Wind Chill Calculation
     let notapplicapble = " N/A"
 let temp = parseFloat(document.getElementById('temp').textContent);
 let windspeed = parseFloat(document.getElementById('speed').textContent);
@@ -47,9 +49,3 @@ else{
   document.getElementById('chill').innerHTML = notapplicapble;
 };
   });
-
-
-
-
-
-  
