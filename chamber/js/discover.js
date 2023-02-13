@@ -14,9 +14,9 @@ function populateStorage() {
 
 function loginTime() {
     let lastLogin = localStorage.getItem('lastLogin');
-    let daysPassed = (parseFloat(date) - parseFloat(lastLogin)) / (1000);
+    let daysPassed = (parseFloat(date) - parseFloat(lastLogin));
     let displayTime = Math.round(daysPassed);
-    document.getElementById('day').innerHTML = "It has been " + displayTime + " days since your last visit!";
+    document.getElementById('day').innerHTML = "It has been " + daysPassed + " days since your last visit!";
     localStorage.setItem('lastLogin', date);
 };
 
