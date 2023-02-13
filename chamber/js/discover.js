@@ -17,12 +17,9 @@ function loginTime() {
     let lastLogin = localStorage.getItem('lastLogin');
     let daysPassed = (parseFloat(currentDate) - parseFloat(lastLogin)) / (8640);
     let displayTime = Math.round(daysPassed);
-    let message = document.getElementById('day').innerHTML = "It has been " + displayTime + " days since your last visit!";
-    localStorage.setItem('lastlogin', date);
-    
-
-}
-;
+    document.getElementById('day').innerHTML = "It has been " + displayTime + " days since your last visit!";
+    localStorage.setItem('lastLogin', date);
+};
 
 const images = document.querySelectorAll('.main');
 const options = {threshold: [0.9]};
