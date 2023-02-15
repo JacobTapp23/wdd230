@@ -20,11 +20,14 @@ function loginTime() {
     localStorage.setItem('lastLogin', date);
 };
 
-const images = document.querySelectorAll('.main');
+const images = document.querySelectorAll('[data-src]');
 const options = {threshold: [0.9]};
 
 function preloadImage(img) {
     const source = img.getAttribute('data-src');
+    if(!source){
+        return;
+    }
     img.src = source;
 }
 
@@ -39,7 +42,9 @@ const io = new IntersectionObserver(
             }
             //console.log(entries);
         });
-    }, options);
+    },
+    options
+);
 
 images.forEach(images =>{
     io.observe(images);
