@@ -64,13 +64,14 @@ form {
 }
 input[type=text], input[type=tel], input[type=email], select, textarea {
     width: 100%;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
+    height:50px;
   }
 input[type=radio]{
     resize:vertical;
+    height:50px;
 }
 label {
     padding: 10px;
@@ -172,7 +173,6 @@ div.joinpage {
     border-style: solid;
     border-width: 1px;
     margin: 10px;
-    padding: 10px;
     min-height:200px;
 }
 div.spotlights{
