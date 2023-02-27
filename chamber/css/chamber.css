@@ -213,7 +213,7 @@ max-height:100%;
 div.hero{
     position: relative;
     background-size: cover;
-    /* background-image: URL("../images/hero-background-min.jpg"); */
+    background-image: URL("../images/hero-background-min.jpg");
 }
 
 #hero-box {
