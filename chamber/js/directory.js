@@ -1,4 +1,7 @@
-
+// Responsive Hamburger Menu
+const nav = document.querySelector('.navigation');
+nav.addEventListener('click', ()=>
+{nav.classList.toggle('shown')});
 
 fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
   .then(function (response) {
