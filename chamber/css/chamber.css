@@ -17,6 +17,9 @@ main{
     padding:20px;
 }
 
+#weathericon {
+    max-width: 30%;
+}
 
 main.form{
     display:grid;

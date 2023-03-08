@@ -25,29 +25,32 @@ if (d.getDay() == 1 || d.getDate() == 2) {
 };
 
 // weather API call
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5606275&appid=4dca22dd938418525bfde3d55fe13bc7";
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
-    console.log(jsObject);
-    let tempK = jsObject.list[0].main.temp;
-    let tempF = Math.round(((tempK - 273.15) * 1.8000 + 32.00)* 10) / 10;
-    document.querySelector("#temp").textContent = tempF;
-    document.querySelector("#speed").textContent = jsObject.list[0].wind.speed;
-    const iconsrc = `https://openweathermap.org/img/w/${jsObject.list[0].weather[0].icon}.png`;
-    document.querySelector('#weathericon').setAttribute('src', iconsrc);
-    document.querySelector('#condition').textContent = jsObject.list[0].weather[0].description;
+
+const apiURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Salmon%20Idaho?unitGroup=us&key=GR4ZVARZ2G4VWWTRUT4MR8ENW&contentType=json";
+const getWeather = async () => {
+    const response = await fetch(apiURL);
+    const data = await response.json();
+    console.log(data);
+    let t = data.currentConditions.temp;
+    document.querySelector('#temp').textContent = t;
+    let image = `https://raw.githubusercontent.com/visualcrossing/WeatherIcons/main/SVG/1st%20Set%20-%20Color/${data.currentConditions.icon}.svg`;
+    document.querySelector('#speed').textContent = data.currentConditions.windspeed;
+    document.querySelector('#condition').textContent =  data.currentConditions.conditions;
+    document.querySelector('#weathericon').src = image;
+    document.querySelector('#weathericon').alt= data.currentConditions.conditions + ' icon';
 
 // Wind Chill Calculation
-    let notapplicapble = " N/A"
-let temp = parseFloat(document.getElementById('temp').textContent);
-let windspeed = parseFloat(document.getElementById('speed').textContent);
-let windchill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
 
-if (temp <= 50.00 && windspeed >= 3.00) {
-  document.getElementById('chill').innerHTML = " " + windchill + "&#176;F";
-}
-else{
-  document.getElementById('chill').innerHTML = notapplicapble;
+    let notapplicapble = " N/A"
+    let temp = parseFloat(document.getElementById('temp').textContent);
+    let windspeed = parseFloat(document.getElementById('speed').textContent);
+    let windchill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+
+    if (temp <= 50.00 && windspeed >= 3.00) {
+      document.getElementById('chill').innerHTML = " " + windchill + "&#176;F";
+    }
+    else{
+      document.getElementById('chill').innerHTML = notapplicapble;
+    };
 };
-  });
+getWeather();
