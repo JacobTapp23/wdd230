@@ -322,6 +322,13 @@ div.footer-box {
     table tr:nth-child(even) {
         background-color: #FFDDD2;
     }
+    #discover-images:{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+        overflow:hidden;
+    }
 
 @media screen and (min-width:650px) {
     main.index{
@@ -334,7 +341,6 @@ div.footer-box {
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:10px;
-        overflow: hidden;
     }
     img.main{
         max-width:100%;
