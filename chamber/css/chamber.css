@@ -335,6 +335,9 @@ div.footer-box {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:10px;
     }
+    img.main{
+        width:100%;
+    }
     img.main:hover{
          box-shadow: 0 0 50px #333;
     }
