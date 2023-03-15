@@ -334,6 +334,7 @@ div.footer-box {
         align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:10px;
+        overflow: hidden;
     }
     img.main{
         max-width:100%;
