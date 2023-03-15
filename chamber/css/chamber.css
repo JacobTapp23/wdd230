@@ -322,13 +322,13 @@ div.footer-box {
     table tr:nth-child(even) {
         background-color: #FFDDD2;
     }
-    #discover-images:{
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: space-around;
-        overflow:hidden;
-    }
+#discover-images{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    overflow:hidden;
+}
 
 @media screen and (min-width:650px) {
     main.index{
