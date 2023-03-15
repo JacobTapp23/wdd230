@@ -336,7 +336,7 @@ div.footer-box {
         grid-gap:10px;
     }
     img.main{
-        width:100%;
+        max-width:100%;
     }
     img.main:hover{
          box-shadow: 0 0 50px #333;
@@ -393,6 +393,7 @@ div.footer-box {
         grid-row:1;
     }
 }
+
 @media screen and (min-width:1180px){
 #img1 {
     grid-column:1;
