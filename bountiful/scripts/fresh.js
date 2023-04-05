@@ -3,6 +3,12 @@ const nav = document.querySelector('.navigation');
 nav.addEventListener('click', ()=>
 {nav.classList.toggle('shown')});
 
+// Dynamic Last Updated Footer
+let currentdate = document.lastModified;
+      document.querySelector(".modified").textContent =
+        "Last Updated: " + currentdate;
+document.querySelector(".year").innerHTML = new Date().getFullYear();
+
 fetch('https://andejuli.github.io/wdd230/fruit.json')
   .then(function (response) {
     return response.json();

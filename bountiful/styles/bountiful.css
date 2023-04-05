@@ -30,6 +30,9 @@ header {
     top: 0;
     z-index: 999;
 }
+footer{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
 
 div.content{
@@ -122,13 +125,11 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     border: 1px solid black;
     margin: 10px;
     padding: 10px;
-    max-width: 1fr;
 }
 .formoutput{
     background-color: #8bf8b0;
     margin: 10px;
     padding: 10px;
-    max-width: 1fr;
     background-image: URL("../images/freshsmoothies.webp");
 }
 .thankyou{
@@ -141,11 +142,18 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     background-color: #8bf8b0;
     border: 1px solid black;
     margin: 10px;
-    padding: 10px;
-    max-width: 1fr;
+
 }
 .gmap iframe{
     max-width: 100%;
+}
+.ourstory{
+    padding:5px;
+    background-color: #8bf8b0;
+}
+.contact{
+    background-color: #a69cd7;
+    margin-bottom: 10px;
 }
 @media screen and (min-width:650px) {
     #theweather{
@@ -178,8 +186,19 @@ input[type=text], input[type=tel], input[type=email], select, textarea {
     nav{
         grid-column: 2;
     }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
     #freshcontent{
         display:grid;
         grid-template-columns: 1fr 1fr;
+    }
+    .aboutusstuff{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contact{
+        grid-column: 1/ span 2;
     }
 }
