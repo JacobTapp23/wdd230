@@ -1,1 +1,185 @@
 /* color hex codes a69cd7-ff8785-ffffff-ffdb70-8bf8b0 */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    }
+p, a, label {
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+#snumber {
+    font-size: 32pt;
+    
+}
+body{
+    text-align: center;
+}
+main{
+    background-color: #ffffff;
+}
+header {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    min-height: 80px;
+    text-align: center;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+div.content{
+    display:flex;
+    flex-direction: column;
+}
+.navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.navigation li:first-child{
+    display: block;
+}
+.navigation li{
+    display:none;
+}
+.navigation a{
+    text-decoration: none;
+    color:black;
+    transition: 0.3s ease;
+    border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+.navigation a:hover{
+    border-top: 4px solid #ffdb70;
+     border-bottom: 4px solid #ffdb70;
+     padding: 6px 0; 
+      
+}
+.shown li{
+    display: block;
+}
+#thesmoothies{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+div.hero{
+    position: relative;
+    background-size: cover;
+    background-image: URL("../images/hero-background-min.jpg");
+    min-height: 400px;
+}
+#bhero{
+    background-color: #ffdb70;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 24px;
+    position:absolute;
+    bottom:20px;
+    right:20px;
+}
+#bhero:hover{
+    background-color: #8bf8b0;
+    color:white;
+}
+#aboutCarlsbad{
+    background-color:#ff8785 ;
+}
+#weathericon1, #weathericon2, #weathericon3 {
+    max-width: 30%;
+}
+div.weather{
+    border: 1px solid black;
+    margin: 20px;
+    background-color: #8bf8b0;
+}
+form {
+    display:block;
+    margin: 10px;
+    padding: 10px;
+}
+input[type=text], input[type=tel], input[type=email], select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    height:45px;
+  }
+  #formbox{
+    background-color: #a69cd7;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    max-width: 1fr;
+}
+.formoutput{
+    background-color: #8bf8b0;
+    margin: 10px;
+    padding: 10px;
+    max-width: 1fr;
+    background-image: URL("../images/freshsmoothies.webp");
+}
+.thankyou{
+    display:none;
+}
+.displayoutput{
+    display:block;
+}
+.noimage{
+    background-color: #8bf8b0;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    max-width: 1fr;
+}
+.gmap iframe{
+    max-width: 100%;
+}
+@media screen and (min-width:650px) {
+    #theweather{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    div.weather {
+        width: 350px;
+    }
+    .navigation li:first-child{
+        display:none;
+    }
+    .navigation li{
+        display:block;
+    }
+    nav ul{
+        justify-content: space-around;
+        display: flex;
+        list-style: none;
+        font-size: 16pt;
+        vertical-align: middle;
+        flex-direction: row;
+    }
+    div.header-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+      align-items: center;
+    }
+    nav{
+        grid-column: 2;
+    }
+    #freshcontent{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

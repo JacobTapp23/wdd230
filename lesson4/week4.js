@@ -3,7 +3,7 @@ const ham = document.querySelector('.ham');
 const nav = document.querySelector('.navigation')
 
 function show() {
-    button.classList.toggle('newstyle');
+    document.querySelector('.thank-you').classList.toggle('newstyle');
 }
 
 button.addEventListener('click', show);

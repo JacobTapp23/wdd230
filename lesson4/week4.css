@@ -1,5 +1,5 @@
-.newstyle {
-    background-color: red;
+#notify {
+    display:block;
 }
 nav{
     display: flex;

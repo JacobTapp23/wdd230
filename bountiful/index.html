@@ -5,8 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/bountiful.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
 <body>
-    
+<div class="content">
+    <header>
+        <div class="header-grid">
+        <div class="logo-box">
+          <a href="index.html">
+            <img class="logo"
+              src="images/logosmall.png"
+              alt="Logo image"
+            />
+          </a>
+          </div>
+        <nav>
+            <ul class="navigation">
+            <li><a href="#">&#9776;</a></li>
+              <li><a href="fresh.html">Fresh Fruit</a></li>
+              <li><a href="aboutUs.html">About Us</a></li>
+              <li><a href="#" class="fa fa-facebook"></a> 
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a></li>
+            </ul>
+          </nav>
+          </div>
+    </header>
+    <h1 id="hero">Specialty Drinks</h1>
+    <div class="hero">
+      <a href="fresh.html">
+      <button id="bhero" type="button">Try a Fruit Drink</button>
+      </a>
+    </div>
+    <div id="thesmoothies">
+        <div id="smooNumber">
+          <h3>Number of Drinks You've Had:</h3>
+          <p id="snumber">0</p>
+        </div>
+        <div id="smoothiePic">
+          <img id="theSmoothie" src="images/smoothie.jpg" alt="the smoothie"/>
+        </div>
+    </div>
+    <div id="aboutCarlsbad">
+      <h2>Explore Carlsbad</h2>
+      <p>Carlsbad is a charming coastal city located in North San Diego County, California. Known for its beautiful beaches, picturesque coastline, and warm Mediterranean climate, Carlsbad attracts visitors from all over the world. The city is home to several popular attractions, including LEGOLAND California, the Carlsbad Flower Fields, and the Batiquitos Lagoon, a nature reserve with scenic trails for hiking and birdwatching. Carlsbad also boasts a vibrant downtown area, with a variety of shops, restaurants, and art galleries. Whether you're looking to relax on the beach, explore nature, or indulge in some retail therapy, Carlsbad offers something for everyone.</p>
+    </div>
+    <div id="theweather">
+    <div class="weather">
+      <h3 id="date1"></h3>
+      <div class="weather-box"><img id="weathericon1" src="" alt="current-weather"/> <h1><span id="temp1"></span>&#176;F</h1></div>
+      <p>Condition: <span id="condition1"></span></p>
+      <p>Description: <span id="description1"></span></p>
+      <p>Humidity: <span id="humidity1"></span>%</p>
+    </div>
+    <div class="weather">
+      <h3 id="date2"></h3>
+      <div class="weather-box"><img id="weathericon2" src="" alt="current-weather"/> <h1><span id="temp2"></span>&#176;F</h1></div>
+      <p>Condition: <span id="condition2"></span></p>
+      <p>Description: <span id="description2"></span></p>
+      <p>Humidity: <span id="humidity2"></span>%</p>
+    </div>
+    <div class="weather">
+      <h3 id="date3"></h3>
+      <div class="weather-box"><img id="weathericon3" src="" alt="current-weather"/> <h1><span id="temp3"></span>&#176;F</h1></div>
+      <p>Condition: <span id="condition3"></span></p>
+      <p>Description: <span id="description3"></span></p>
+      <p>Humidity: <span id="humidity3"></span>%</p>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-main">
+          <div class="footer-box">
+              <img class="logo"
+                src="images/logosmall.png"
+                alt="Logo image"
+              />
+              </div>
+      
+            <h2>Bountiful Foods</h2>
+            <p>1594 MarBrisa Cir, Carlsbad, CA 92008 | (208)-555-3553</p>
+            </div>
+          <div class="footer-date"><p>&copy; <span class="year"></span> Bountiful Foods | Jacob Tapp | WDD 230 Project | <span class="modified"></span> </p>
+          </div>
+        </footer>
+</div>   
 </body>
+<script src="scripts/index.js"></script>
 </html>
