@@ -93,6 +93,34 @@ div.hero{
     bottom:20px;
     right:20px;
 }
+#submitbutton{
+    background-color: #8bf8b0;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 24px;
+}
+#morefresh{
+    background-color: #ff8785;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 24px;
+}
+#submitbutton:hover{
+    background-color: #ff8785;
+    color: black;
+}
 #bhero:hover{
     background-color: #8bf8b0;
     color:white;
